@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  list-style:none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+li{
+  flex: 1 1 250px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+li > a{
+  display: block;
+}
+li img{
+display: block;
+width: 100%;
+aspect-ratio: 1.6;
+object-fit: cover;
+border-radius: 12px;
+}
+
+h1, h2{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:rgb(5, 106, 207);
+}
+p{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin: 8px 0 0;
+}
+
+
+@media screen and (max-width:500px) {
+  li {
+    flex-basis: 100%;
+  }
+}
